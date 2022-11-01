@@ -16,13 +16,13 @@ class MainActivity : AppCompatActivity() {
     private lateinit var vpVistaPager:ViewPager2
 
     private val adaptador by lazy{
-        vpAdaptador(this)
+        vpAaptador(this)
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         tlVistaTabla = findViewById(R.id.tl_VistaTablero)
-        vpVistaPager = findViewById(R.id.vp_VistaPager)
+        vpVistaPager = findViewById(R.id.vp_vistaPager)
 
         vpVistaPager.adapter = adaptador
 
